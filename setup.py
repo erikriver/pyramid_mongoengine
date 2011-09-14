@@ -11,8 +11,9 @@ requires = [
             'pyramid',
             'mongoengine',
         ]
+
 entry_points = """
-    [paster.paster_create_template]
+    [paste.paster_create_template]
     pyramid_mongoengine = pyramid_mongoengine.paster_template:MongoengineProjectTemplate
 """
 
@@ -31,9 +32,10 @@ setup(name='pyramid_mongoengine',
       author_email='iarzhannikov@gmail.com',
       url='https://github.com/xandox/pyramid_mongoengine',
       license='MIT',
-      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
+      test_suite="pyramid_mongoengine",
       entry_points=entry_points,
       )
