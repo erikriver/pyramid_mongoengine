@@ -1,6 +1,10 @@
 from setuptools import setup, find_packages
 import sys, os
 
+here = os.path.abspath(os.path.dirname(__file__))
+README = open(os.path.join(here, "README")).read()
+README = README.split("\n\n", 1)[0] + "\n"
+
 version = '0.1'
 
 requires = [
