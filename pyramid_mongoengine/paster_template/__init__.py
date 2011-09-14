@@ -6,7 +6,7 @@ class PyramidTemplate(Template):
     def pre(self, command, output_dir, vars):
         vars['random_string'] = os.urandom(20).encode('hex')
         package_logger = vars[package]
-        if package_logger = 'root':
+        if package_logger == 'root':
             package_logger = 'app'
         vars['package_logger'] = package_logger
         return Template.pre(self, command, output_dir, vars)
