@@ -1,0 +1,54 @@
+========
+Overview
+========
+
+``pyramid_mongoengine`` is a simple Paster template or scaffold for the Pyramid Web
+Framework. It provides URL mapping via traversal and persistence via MongoEngine.
+It is based on the "starter" template included in Pyramid core, and Niall O'Higgins's
+"mongodb" template.
+
+See
+  http://docs.pylonsproject.org/projects/pyramid/1.0/narr/project.html#paster-templates-included-with-pyramid
+  https://github.com/niallo/pyramid_mongodb.git
+
+==========
+Installing
+==========
+
+Latest stable releases can be found at http://pypi.python.org/pypi/pyramid_mongoengine
+
+You can install from Pypi using ``easy_install`` or ``pip``::
+
+    easy_install pyramid_mongoengine
+
+or alternatively::
+
+    pip install pyramid_mongoengine
+
+
+===
+Use
+===
+
+Once ``pyramid_mongoengine`` is installed, you should see it in the list of
+available templates when you run ::
+
+    paster create --list-templates
+
+
+::
+
+  $ paster create --list-templates
+  Available templates:
+    basic_package:          A basic setuptools-enabled package
+    paste_deploy:           A web application deployed through paste.deploy
+    pyramid_alchemy:        pyramid SQLAlchemy project using traversal
+    pyramid_mongoengine:    pyramid MongoDB project via MongoEngine
+    pyramid_routesalchemy:  pyramid SQLAlchemy project using url dispatch (no traversal)
+    pyramid_starter:        pyramid starter project
+    pyramid_zodb:           pyramid ZODB starter project
+
+
+You can create a project with MongoDB support by running ``paster create -t pyramid_mongoengine``.
+
+
