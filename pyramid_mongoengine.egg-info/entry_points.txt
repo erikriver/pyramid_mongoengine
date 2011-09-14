@@ -1,3 +1,3 @@
 
-      # -*- Entry points: -*-
-      
+    [paster.paster_create_template]
+    pyramid_mongoengine = pyramid_mongoengine.paster_template:MongoengineProjectTemplate
