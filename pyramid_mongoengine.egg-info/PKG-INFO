@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyramid-mongoengine
+Version: 0.1dev
+Summary: pyramid project with MongoDB and mongoengine
+Home-page: UNKNOWN
+Author: Ely Arzhannikov
+Author-email: iarzhannikov@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pyramid mongodb mongoengine
+Platform: UNKNOWN
