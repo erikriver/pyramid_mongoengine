@@ -1,0 +1,3 @@
+include *.txt *.cfg
+recursive-include pyramid_mongoengine/paster_templates *
+global-exclude *.pyc
