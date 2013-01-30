@@ -12,27 +12,12 @@ mongodb.db_name = {{project}}_production
 mongodb.user = {{project}}
 mongodb.password =
 
-[filter:weberror]
-use = egg:WebError#error_catcher
-debug = false
-;error_log =
-;show_exceptions_in_wsgi_errors = true
-;smtp_server = localhost
-;error_email = {{repr(author_email or 'somebody@example.com')}}
-;smtp_username = {{repr(author or 'somebody')}}
-;smtp_password = "{{repr(author or 'somebody')}}'s password"
-;from_address = {{project}}@localhost
-;error_subject_prefix = "Pyramid Error"
-;smtp_use_tls =
-;error_message =
-
 [pipeline:main]
 pipeline =
-    weberror
     {{project}}
-
+    
 [server:main]
-use = egg:Paste#http
+use = egg:waitress#main
 host = 0.0.0.0
 port = 6543
 

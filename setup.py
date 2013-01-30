@@ -5,7 +5,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, "README")).read()
 README = README.split("\n\n", 1)[0] + "\n"
 
-version = '0.1'
+version = '0.2'
 
 requires = [
             'pyramid',
@@ -15,6 +15,8 @@ requires = [
 entry_points = """
     [paste.paster_create_template]
     pyramid_mongoengine = pyramid_mongoengine.paster_template:MongoengineProjectTemplate
+    [pyramid.scaffold]
+    mongoengine = pyramid_mongoengine.paster_template:MongoengineProjectTemplate
 """
 
 setup(name='pyramid_mongoengine',

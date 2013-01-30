@@ -6,14 +6,14 @@ from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.txt')).read()
 
-version = {{repr(version or "0.0")}}
+version = "0.0"
 
 requires = [
     'pyramid',
     'pyramid_tm',
     'pyramid_debugtoolbar',
-    'WebError',
     'mongoengine',
+    'waitress',
     ]
 
 if sys.version_info[:3] < (2,5,0):
@@ -29,11 +29,11 @@ setup(name='{{project}}',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
-      author={{repr(author or '')}},
-      author_email={{repr(author_email or '')}},
-      url={{repr(url or '')}},
-      license={{repr(license_name or '')}},
-      keywords={{repr(keywords or 'web pylons pyramid mongodb mongoengine')}},
+      author='',
+      author_email='',
+      url='',
+      license='',
+      keywords='web pylons pyramid mongodb mongoengine',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
